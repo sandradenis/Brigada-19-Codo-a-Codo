@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brigada - 19</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ysabeau&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/estilos.css">
+
+</head>
+
+<body>
+  <Header id="encabezado">
+
+  </Header>
+
+  <main class="container">
+    <div class="wave" style="height: 150px; overflow: hidden;">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: white;"></path>
+      </svg>
+    </div>    
+
+    <div class="Formulario">
+    <h3>Formulario de Contacto</h3>
+    <br>
+    <p>Pida información adicional de un evento que no figure en el sitio web</p>
+    <br>
+      <form action="./showdata.html">
+        <label for="fname">Nombre y Apellido</label>
+        <input type="text" id="fname" name="fullname" placeholder="Nombre completo">
+
+        <label for="lname">Datos de Contacto</label>
+        <input type="text" id="contacto" name="contacto" placeholder="Ingrese email o teléfono">
+
+        <label for="country">Tipo de Evento</label>
+        <select id="evento" name="evento">
+          <option value="vacio"></option>
+          <option value="opcion1">Conciertos/Recitales</option>
+          <option value="opcion2">Festivales Gratuitos</option>
+          <option value="opcion3">Eventos al aire libre</option>
+          <option value="opcion4">Otros</option>
+        </select>
+        <label for="comment">Comentario</label>
+        <textarea>Escriba aquí su comentario...</textarea>
+
+        <button class="button" onclick="validar()">Enviar Formulario</button>          
+       
+        
+  <br><br><input type="Reset" value="Borrar todo"></input>
+      </form>
+    </div>
+
+    <br><br>
+    <br><br><br> 
+
+  </main>
+
+  <footer id="footpie">
+
+  </footer>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./Js/main.js"></script>
+  <script src="./Js/datos.js"></script>
+  <script src="./Js/novedades.js"></script>
+  <script src="./Js/validarForm.js"></script>
+</body>
+
+</html>

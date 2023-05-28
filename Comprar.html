@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/estiloComprar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ysabeau&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <Header id="encabezado">
+
+    </Header>
+
+    <main class="container">
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+        <br><br>
+        <h1 class="titulo">Compra de entradas</h1>
+        <h1 class="ver-carrito pos-carrito" id="verCarrito">🛒</h1>
+        <br>
+        <!--Shop content-->
+        <div id="shopContent" class="shop-content"></div>
+
+        <!--modal container-->
+        <div class="modal-container" id="modal-container"></div>
+
+        <!-- informacion -->
+        <div class="contenido">
+            <h1 class="title-importante">Politicas de venta</h1>
+            <br>
+            <div class="contenido-venta">
+                <div class="ubicacion">
+                    <h3>Estadio Malvinas Argentinas</h2>
+                        <p>Bajada del Cerro s/n, M5500 Mendoza</p>
+                        <iframe class="maps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53597.990777079!2d-68.88247110086064!3d-32.90148827831999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09b522bd5683%3A0x684a90ae779e7723!2sEstadio%20Malvinas%20Argentinas!5e0!3m2!1ses-419!2sar!4v1683592233658!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="metodo-pago">
+                    <h3 class="title-pago">Metodos de Pago</h3>
+                    <div class="info-pago">
+                        <img class="img-pago" src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/120X240.jpg"
+                            title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" width="150"
+                            height="240" />
+                        <p>Podes pagar con todos los metodos que aparecen en pantalla. Tambien recorda que acercadonde
+                            al punto de venta
+                            en el mapa podes comprar presencialmente tus entradas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-importante">
+            <p class="texto-importante">
+                • Habran puntos estrategicos para fumadores.
+                <br>
+                • Menores de 18 años: Prohibido el ingreso a las funciones que comienzan a partir de las 23:00 hs.
+                <br>
+                • Prohibido el ingreso a menores de 5 años.
+                <br>
+                • El evento garantiza el acceso y permanencia de personas con discapacidad motora.
+                <br>
+                • Las personas con alguna con discapacidad debera presentarse con su entrada y certificado de
+                discapacidad
+                <br>
+                • El adquirente de Entradas es responsable de chequear, aceptar y confirmar los términos y condiciones
+                de su compra previo a realizarla, incluyendo sin limitación: la descripción y especificación del evento
+                para el cual adquirió las entradas, los plazos y condiciones de la entrega, los precios y condiciones de
+                pago, los costos y cargos adicionales. Por ello antes de completar su compra, por favor revise
+                cuidadosamente el evento, sección y ubicación deseada, ya que una vez confirmada su compra no se
+                permiten cambios, reembolsos y/o devoluciones por este motivo.
+            </p>
+        </div>
+
+
+    </main>
+
+    <footer id="footpie">
+
+    </footer>
+
+    <script src="./Js/main.js"></script>
+    <script src="./Js/datos.js"></script>
+    <script src="./Js/productos.js"></script>
+    <script src="./Js/app.js"></script>
+</body>
+
+</html>

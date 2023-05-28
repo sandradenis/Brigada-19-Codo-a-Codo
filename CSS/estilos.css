@@ -1,0 +1,480 @@
+/* CSS HEX
+--cod-gray: #1c1b1b;
+--tia-maria: #c7230d;
+--fuel-yellow: #ee9f21;
+--moccaccino: #731714;
+--ironstone: #7c483c;
+--kumera: #846c24;
+--deep-bronze: #4c4404;
+ */
+
+/* SCSS HEX 
+$cod-gray: #1c1b1b;
+$tia-maria: #c7230d;
+$fuel-yellow: #ee9f21;
+$moccaccino: #731714;
+$ironstone: #7c483c;
+$kumera: #846c24;
+$deep-bronze: #4c4404;
+*/
+
+/* SCSS RGB 
+--cod-gray: rgba(28,27,27,1);
+--tia-maria: rgba(199,35,13,1);
+--fuel-yellow: rgba(238,159,33,1);
+--moccaccino: rgba(115,23,20,1);
+--ironstone: rgba(124,72,60,1);
+--kumera: rgba(132,108,36,1);
+--deep-bronze: rgba(76,68,4,1);
+*/
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ysabeau', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
+  background: linear-gradient(to right, hsla(0, 7%, 32%, 0.425), hsla(7, 88%, 42%, 0.404)), url(../IMAGENES/header.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  top: 350px;
+  width: 100%;
+
+}
+
+.Logo {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  margin-right: 2px;
+  border-radius: 50px;
+  border-style: double;
+}
+
+a {
+  text-decoration: none;
+  color: #7c483c;
+  opacity: 80%;
+
+}
+
+.anav {
+  font-weight: 600;
+  font-size: 23px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.anav:hover {
+  color: whitesmoke;
+}
+
+.aheader {
+  display: block;
+  top: 100px;
+  left: 450px;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: whitesmoke;
+  }
+
+h1:hover {
+  font-size: 60px;
+  color: #7c483c;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  color: whitesmoke;
+  opacity: 70%;
+  }
+
+h2:hover {
+  font-size: 30px;
+  color: black;
+}
+
+footer {
+  color: #7c483c;
+  background-color: #1c1b1b;
+  font-size: 23px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.afooter {
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Music - el contenido de la Home*/
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+h4 {
+  color: #011223;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.subtitulo:hover {
+  font-size: x-large;
+  text-decoration: underline;
+  color: #7c483c;
+}
+
+.About_Music {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+
+}
+
+.About_Music_ImagenLeft {
+  width: 500px;
+  height: 300px;
+  background-image: url(../IMAGENES/fondo\ header.jpg);
+  background-size: 150%;
+  animation: movimiento 10s infinite linear alternate;
+  align-items: left;
+  border: #c7230d;
+  border-style: double;
+}
+
+.About_Music_Imagenright {
+  width: 500px;
+  height: 300px;
+  background-image: url(../IMAGENES/Home\ 1.jpg);
+  background-size: 150%;
+  animation: movimiento 10s infinite linear alternate;
+  align-items: right;
+  border: #c7230d;
+  border-style: double;
+}
+
+.About_Music_Imagencenter {
+  width: 500px;
+  height: 300px;
+  background-image: url(../IMAGENES/fondo\ 1.jpg);
+  background-size: 150%;
+  animation: movimiento 10s infinite linear alternate;
+  align-items: left;
+  border: #c7230d;
+  border-style: double
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: top right;
+  }
+}
+
+.About_Music_parrafo {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 300%;
+}
+
+.button {
+  background-color: #1c1b1b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* --------------------------------------PAGINA NOVEDADES ESTILOS --------------------------------------------*/
+.containerNovedades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: #c7230d;
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  margin: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.card-image {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+
+}
+
+.titulo {
+  opacity: 80%;
+  color: #1c1b1b;
+}
+
+.card img {
+  width: 300px;
+  height: 170px;
+  border-style: groove;
+}
+
+.card h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.card h3 {
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+}
+
+.card ul {
+  padding: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/*---------------------------------------Estilos página contacto----------------------------------------*/
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit],
+[type=reset] {
+  width: 10%;
+  background-color: #1c1b1b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text]:focus {
+  background-color: #ee9f21;
+}
+
+input[type=submit]:hover {
+  background-color: #ee9f21;
+}
+
+input[type=reset]:hover {
+  background-color: #ee9f21;
+}
+
+.Formulario {
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+table {
+  display: inline-flexbox;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 41%;
+  
+}
+.button2{
+  margin-left: 44%;
+  background-color: #1c1b1b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/*--------------------------------------------estilo Filtro--------------------------------------------*/
+
+.containerFiltro {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.filtro{
+  display: none;
+}
+
+/*-------------------------------modifico para que sea responsivo---------------------------------------*/
+
+@media screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .Logo {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-right: 2px;
+    border-radius: 5px;
+    border-style: double;
+
+  }
+
+  .aheader {
+    display: block;
+    top: 100px;
+    left: 150px;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aheader h1 {
+    font-size: 30px;
+  }
+
+  .aheader h2 {
+    display: block;
+    height: 5px;
+    font-size: 30px;
+  }
+
+  nav a {
+    float: left;
+    padding: 15px;
+    align-items: center;
+    left: 50px;
+  }
+
+  .afooter {
+    width: 20px;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Logo {
+    display: block;
+    height: 90px;
+    align-items: center;
+    margin-right: 2px;
+    border-radius: 5px;
+    border-style: double;
+
+  }
+
+  .aheader {
+    display: block;
+    top: 100px;
+    left: 150px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aheader h1 {
+    font-size: 40px;
+  }
+
+  .aheader h2 {
+    display: block;
+    height: 200px;
+    font-size: 20px;
+  }
+}

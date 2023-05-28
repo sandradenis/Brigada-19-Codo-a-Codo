@@ -1,0 +1,470 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+    background: linear-gradient(to right, hsla(0, 7%, 32%, 0.425), hsla(7, 88%, 42%, 0.404)), url(../IMAGENES/header.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    top: 350px;
+    width: 100%;
+
+}
+
+.Logo {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin-right: 2px;
+    border-radius: 50px;
+    border-style: double;
+}
+
+a {
+    text-decoration: none;
+    color: #7c483c;
+    opacity: 80%;
+
+}
+
+.anav {
+    font-weight: 600;
+    font-size: 23px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.anav:hover {
+    color: whitesmoke;
+}
+
+.aheader {
+    display: block;
+    top: 100px;
+    left: 450px;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: whitesmoke;
+    }
+
+h1:hover {
+    font-size: 60px;
+    color: #7c483c;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    color: whitesmoke;
+    opacity: 70%;
+   }
+
+h2:hover {
+    font-size: 30px;
+    color: black;
+}
+
+footer {
+    color: #7c483c;
+    background-color: #1c1b1b;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.afooter {
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------------Carrito--------------------*/
+.pos-carrito {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card>img {
+    width: 250px;
+    height: 200px;
+}
+
+.entrada-nombre {
+    padding: 5px;
+}
+
+.precio {
+    color: grey;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.descripcion {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #fbbc5b;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.9;
+}
+
+/* modal content */
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #ffffff;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    overflow: hidden;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-hader-title {
+    justify-self: start;
+    font-family: sans-serif;
+}
+
+.modal-header-btn {
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.modal-container>.carrito-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container>div>img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-compra {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+/* INFORMACION DE VENTA */
+.contenido {
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 300px;
+    position: relative;
+    align-content: center;
+}
+
+.img-pago {
+    align-self: center;
+}
+
+.title-venta {
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: -300px;
+}
+
+.titulo {
+    opacity: 80%;
+    color: #1c1b1b;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.contenido-venta {
+    display: flex;
+    width: 80%;
+    flex: 1 1 50%;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+.ubicacion {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps {
+    width: 420px;
+    height: 320px;
+}
+
+.title-pago {
+    text-align: center;
+}
+
+.info-pago {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+/* info-importante */
+.info-importante {
+    width: 95%;
+    border: 1px solid #fbbc5b;
+    border-radius: 5px;
+    padding-left: 50px;
+    margin-left: 40px;
+}
+
+.title-importante {
+    text-align: center;
+    font-size: 35px;
+    opacity: 80%;
+    color: #1c1b1b;
+}
+
+.texto-importante {
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+/* -------------------------RESPONSIVE------------------------------------- */
+@media (max-width: 760px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenido-venta {
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+    
+      .Logo {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        margin-right: 2px;
+        border-radius: 5px;
+        border-style: double;
+    
+      }
+    
+      .aheader {
+        display: block;
+        top: 100px;
+        left: 150px;
+        padding: 10px;
+        margin: auto;
+        position: absolute;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .aheader h1 {
+        font-size: 30px;
+      }
+    
+      .aheader h2 {
+        display: block;
+        height: 5px;
+        font-size: 30px;
+      }
+    
+      nav a {
+        float: left;
+        padding: 15px;
+        align-items: center;
+        left: 50px;
+      }
+    
+      .afooter {
+        width: 20px;
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      div.content {
+        margin-left: 0;
+      }
+    
+}
+
+@media (max-width:550px) {
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .contenido-venta {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-importante {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:438px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido-venta {
+        display: flex;
+        width: 100%;
+    }
+
+    .maps {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title-pago {
+        text-align: center;
+    }
+
+    .metodo-pago {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Logo {
+        display: block;
+        height: 90px;
+        align-items: center;
+        margin-right: 2px;
+        border-radius: 5px;
+        border-style: double;
+    
+      }
+    
+      .aheader {
+        display: block;
+        top: 100px;
+        left: 150px;
+        padding: 10px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .aheader h1 {
+        font-size: 40px;
+      }
+    
+      .aheader h2 {
+        display: block;
+        height: 200px;
+        font-size: 20px;
+      }
+    }
