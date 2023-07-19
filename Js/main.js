@@ -1,16 +1,14 @@
-
 let cabecera = `
 <div class="headerlogo">
     <a href="./index.html">
-        <img class="Logo" src="./IMAGENES/LOGO GIF.gif" alt="Logo">
+        <img class="Logo" src="./IMAGENES/Red and Black E-Sports Illustrative Gaming Technology Animated Logo.gif" alt="Logo">
       </a>
 </div>
-    
-
     <nav>
       <a class="anav" href="./Comprar.html">Comprar</a>
       <a class="anav" href="./Novedades.html">Novedades</a>
       <a class="anav" href="./Contacto.html">Contacto</a>
+      <a class="anav" href="./Login.html">Log In</a>        
     </nav>
 
     <div class="aheader">

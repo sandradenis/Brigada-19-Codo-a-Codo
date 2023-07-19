@@ -100,7 +100,7 @@ a {
 h1 {
   font-size: 60px;
   color: whitesmoke;
-  }
+}
 
 h1:hover {
   font-size: 60px;
@@ -112,7 +112,7 @@ h2 {
   text-align: center;
   color: whitesmoke;
   opacity: 70%;
-  }
+}
 
 h2:hover {
   font-size: 30px;
@@ -356,13 +356,28 @@ textarea {
 }
 
 table {
-  display: inline-flexbox;
+  display:block;
+  margin-left: 5px;
   justify-content: space-evenly;
-  align-items: center;
-  margin-left: 41%;
-  
+  align-items: baseline;
+  border-spacing: 10px;
+  table-layout: auto;
+  width: 1000px;
 }
-.button2{
+
+td,
+th {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  border-bottom: 1px solid #ddd;
+}
+
+
+.button2 {
   margin-left: 44%;
   background-color: #1c1b1b;
   border: none;
@@ -384,7 +399,8 @@ table {
   justify-content: center;
   margin-top: 50px;
 }
-.filtro{
+
+.filtro {
   display: none;
 }
 
@@ -478,3 +494,18 @@ table {
     font-size: 20px;
   }
 }
+
+/*-------------------------------API---------------------------------------*/
+
+
+
+
+/*CSS HEX
+--cod-gray: #1c1b1b;
+--tia-maria: #c7230d;
+--fuel-yellow: #ee9f21;
+--moccaccino: #731714;
+--ironstone: #7c483c;
+--kumera: #846c24;
+--deep-bronze: #4c4404;
+ */
